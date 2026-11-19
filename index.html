@@ -99,28 +99,50 @@ h2{font-size:1.45rem;margin:0 0 4px}.sub{color:var(--mut);margin:0 0 16px;font-s
 .gv{position:absolute;left:0;right:0;top:11%;text-align:center;font-size:1.8rem;font-weight:800;color:#ffe29a;text-shadow:0 0 18px #ffb300;opacity:0;transition:opacity 1s;z-index:2;animation:gvp 1.4s ease-in-out infinite alternate}@keyframes gvp{to{transform:scale(1.09);text-shadow:0 0 34px #ff8f00}}
 footer{max-width:880px;margin:0 auto;padding:0 16px 40px;font-size:.78rem;color:var(--mut)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.day li{opacity:1;transform:none}.train{left:40%}}
+
+.hero{padding:0;color:#fff9e9;text-align:left;background:radial-gradient(ellipse at 12% 110%,#4d816a 0,transparent 60%),linear-gradient(110deg,#123c38,#123b36 48%,#185a50);isolation:isolate}
+.cover{position:relative;z-index:1;max-width:1080px;margin:auto;padding:64px 30px 74px;display:grid;grid-template-columns:1fr .9fr;align-items:center;gap:8%}
+.hero .stamp,.passhead,#when{font:700 11px/1.5 'Courier New',monospace;letter-spacing:.13em;text-transform:uppercase}
+.hero h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(48px,6.4vw,90px);line-height:.97;letter-spacing:-.055em;margin:22px 0 18px}.hero h1 em{color:#f6c880;font-weight:400}
+.cd{justify-content:flex-start;gap:16px;margin:22px 0}.cd div{min-width:36px;padding:0;background:none}.cd b{font-variant-numeric:tabular-nums}.cd small{text-transform:uppercase;letter-spacing:.09em}.watch{display:inline-block;color:#fff6de;text-underline-offset:5px}.st{pointer-events:none}
+.pass{color:#213b33;background:#fff6dc;border-radius:17px;overflow:hidden;box-shadow:0 18px 48px #001c2350;animation:up .7s both}.passhead{display:flex;justify-content:space-between;background:#f2c278;color:#324333;padding:13px 22px}.ticketbody{padding:20px 22px 16px;min-height:245px}#when{color:#726343}.ticketbody h2{font:normal 29px/1.08 Georgia,serif;letter-spacing:-.035em;margin:8px 0 14px}.ticketbody ul{list-style:none;padding:0;margin:0 0 12px}.ticketbody li{display:flex;font-size:13px;margin:5px 0;gap:9px}.ticketbody li b{min-width:56px}.ticketbody a{color:#146355;font-size:14px;font-weight:700;text-underline-offset:4px}
+#dateRail{border-top:1px dashed #a69b7c;display:grid;grid-template-columns:repeat(8,1fr);padding:12px 10px;gap:2px}#dateRail button,.legpick button{cursor:pointer;color:inherit;background:none;border:0;border-radius:6px;padding:10px 1px;font-weight:bold}#dateRail button[aria-pressed=true]{background:#15574b;color:white}
+.rail{position:absolute;bottom:15px;height:5px;left:0;right:0;background:repeating-linear-gradient(90deg,#a9b9a5 0 2px,transparent 2px 12px);border-block:1px solid #93a899}.rail i{position:absolute;bottom:4px;width:95px;height:14px;border-radius:3px 11px 1px 1px;background:repeating-linear-gradient(90deg,#e6b95f 0 4px,#344f49 4px 10px,#e6b95f 10px 15px);border-block:4px solid #e6b95f;animation:crossing 18s linear infinite}@keyframes crossing{from{left:-100px}to{left:100%}}
+.legpick{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}.legpick button,.mix select{border:1px solid var(--line);background:var(--soft);padding:8px 12px;color:var(--ink)}.legpick [aria-pressed=true]{box-shadow:inset 0 -3px var(--brand)}
+.mix{margin-top:18px}.mix h3{margin:0}.mix label{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 0;border-bottom:1px solid var(--line)}.mix select{border-radius:8px;max-width:50%}.mix output{display:block;padding:14px 0 0;font-size:1.3rem;font-weight:bold;color:var(--brand)}
+@media(max-width:700px){.cover{grid-template-columns:1fr;gap:28px;padding:34px 18px 45px}.hero h1{font-size:56px}.ticketbody{min-height:0}.cd{margin:14px 0}.rail{bottom:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rail i{left:40%}}
+.toy{background:#193e3b;color:#fff4d9;border-radius:24px;padding:clamp(12px,3vw,26px);box-shadow:0 12px 36px #183c321c}.toyhead,.toyfoot,.filetools{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.toyhead{padding:0 0 14px}.toyhead label,.notebook>label{font-weight:650}.toy select,.notebook select,.notebook input:not([type=checkbox]){border-radius:9px;padding:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;max-width:100%}.toy select{background:#fff2c9;color:#263f33}.toyfoot{padding:14px 0}.toyfoot button,.notebook button,.filebutton{border:0;border-radius:10px;padding:10px 14px;font:inherit;font-weight:650;cursor:pointer;background:#edc478;color:#223b32}
+#windowScene{height:clamp(185px,32vw,300px);position:relative;overflow:hidden;isolation:isolate;border:6px solid #e2cda3;border-radius:44px;background:linear-gradient(var(--sky,#8dd5e5),#ffdfac)}.skyDisc{position:absolute;top:12%;right:13%;background:#fff0b0;border-radius:50%;width:50px;height:50px;box-shadow:0 0 25px #ffdd95}.clouds,.ridge,.prairie,.ties{position:absolute;left:0;right:-240px;animation:drift 8s linear infinite;animation-play-state:paused}.clouds{top:13%;height:40px;background:radial-gradient(ellipse 42px 12px at 80px 24px,#fff9 97%,transparent) 0 0/240px 40px;animation-duration:17s}.ridge{bottom:15%;height:50%;background:var(--hill,#699675);mask:radial-gradient(ellipse 124px 95% at 50% 100%,#000 99%,transparent) 0 0/240px 100%;animation-duration:10s}.prairie{bottom:0;height:30%;background:repeating-linear-gradient(105deg,var(--land,#60976e) 0 55px,color-mix(in srgb,var(--land,#60976e),white 12%) 56px 80px)}.ties{bottom:6%;height:8px;border-block:2px solid #445447;background:repeating-linear-gradient(90deg,#756242 0 5px,transparent 5px 20px);animation-duration:1.2s}.carriage{position:absolute;bottom:6%;left:5%;font-size:42px;line-height:1.2;transform:scaleX(-1)}.rolling :is(.ridge,.prairie,.ties,.clouds){animation-play-state:running}@keyframes drift{to{transform:translateX(-240px)}}#spotObjects button{position:absolute;transform:translate(-50%,-50%);font-size:clamp(28px,5vw,48px);background:#fff9dfdc;border:2px solid #fff4cf;border-radius:50%;width:1.6em;height:1.6em;cursor:pointer;line-height:1}.toy #album{display:flex;gap:5px;flex-wrap:wrap}.souvenir{border:1px dashed #9eb5a8;border-radius:9px;padding:5px 9px;font-size:17px}.souvenir.collected{background:#fbdfa0;color:#173e33}.notebook>label{margin-right:15px;display:inline-block;margin-bottom:8px}.ledger{display:grid;grid-template-columns:repeat(3,1fr);margin:14px 0;background:var(--soft);border-radius:14px;padding:14px;gap:8px}.ledger div{font-size:.82rem;color:var(--mut)}.ledger strong{display:block;color:var(--ink);font-size:clamp(17px,3vw,25px);overflow-wrap:anywhere}#expenseForm{display:flex;align-items:end;gap:8px;flex-wrap:wrap}#expenseForm label{display:grid;gap:3px;flex:1 1 130px}#entries{padding:0;list-style:none}#entries li{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}#entries li span{flex:1;overflow-wrap:anywhere}#entries button{background:var(--soft);color:var(--ink);padding:6px}.filetools{justify-content:start}.filebutton{position:relative}.filebutton input{position:absolute;inset:0;opacity:0;width:100%;cursor:pointer}.filebutton:focus-within{outline:2px solid var(--brand)}#journalStatus{font-size:.85rem;color:var(--mut);margin-bottom:0}
 </style></head><body>
 <div id="sp"></div>
-<header class="hero" id="hero">
-<div class="sun"></div>
-<div style="font-size:2.2rem;position:relative">🚆</div>
-<h1>Mumbai → Madurai → Rameswaram → Tirupati → Mumbai</h1>
-<p>Nov 26 – Dec 3, 2026 · 7 adults + 1 baby · prepared Nov 17, 2026</p>
-<div class="chips"><span class="chip" style="animation-delay:.4s">8 days</span><span class="chip" style="animation-delay:.55s">5 stops</span><span class="chip" style="animation-delay:.7s">Baby 1 yr 1 mo</span><span class="chip" style="animation-delay:.85s">Board home at Pakala</span></div>
-<div class="cd" id="cd"></div>
-<div class="train">🚂🚃🚃🚃🚃</div><div class="track"></div>
-</header>
-<nav id="nav"><a href="#film">Film</a><a href="#route">Route</a><a href="#status">Tickets</a><a href="#details">Day details</a><a href="#days">Day by day</a><a href="#tirumala">Darshan</a><a href="#baby">Baby</a><a href="#money">Budget</a><a href="#dec2">Dec 2</a><a href="#todo">To do</a></nav>
-<main>
+<header class="hero" id="hero"><div class="cover">
+<div class="intro"><p class="stamp">Mumbai round trip &nbsp; / &nbsp; 26 Nov – 03 Dec 2026</p>
+<h1>Rameswaram<br><em>&amp; Tirupati</em></h1><p class="byline">Via Madurai &nbsp;·&nbsp; 7 adults and 1 baby</p>
+<div class="cd" id="cd" aria-label="Departure countdown"></div>
+<a class="watch" href="#film">▷ &nbsp; Watch the journey film</a></div>
+<div class="pass"><div class="passhead"><span>Journey pass</span><span id="dayNo"></span></div><div class="ticketbody" aria-live="polite"><span id="when"></span><h2 id="where"></h2><ul id="brief"></ul><a id="fullDay">Open full day plan →</a></div><div id="dateRail" aria-label="Select itinerary day"></div></div>
+</div><div class="rail" aria-hidden="true"><i></i></div></header>
+<nav id="nav"><a href="#adventure">Play</a><a href="#journal">Journal</a><a href="#film">Film</a><a href="#route">Route</a><a href="#status">Tickets</a><a href="#details">Day details</a><a href="#days">Day by day</a><a href="#tirumala">Darshan</a><a href="#baby">Baby</a><a href="#money">Budget</a><a href="#dec2">Dec 2</a><a href="#todo">To do</a></nav>
+<main><section id="adventure"><h2>Little conductor’s window</h2><p class="sub">Look outside together. Tap what you spot to stamp your journey pass.</p>
+<div class="toy"><div class="toyhead"><label>Ticket to <select id="toyDay"></select></label><span id="toyCount"></span></div>
+<div id="windowScene"><div class="skyDisc"></div><div class="clouds"></div><div class="ridge"></div><div class="prairie"></div><div class="ties"></div><div class="carriage" aria-hidden="true">🚂</div><div id="spotObjects"></div></div>
+<div class="toyfoot"><strong id="hunt" aria-live="polite"></strong><button id="ride"></button></div><div id="album" aria-label="Souvenir stamps"></div></div></section>
+<section id="journal"><h2>Journey journal</h2><p class="sub">Record what you actually spent and tick off each day as you travel.</p><div class="card notebook">
+<label>Journal day <select id="journalDay"></select></label><label><input id="finishedDay" type="checkbox"> Day complete</label>
+<div class="ledger"><div>Day spend<strong id="daySpend"></strong></div><div>Trip spend<strong id="tripSpend"></strong></div><div>Completed<strong id="doneCount"></strong></div></div>
+<form id="expenseForm"><label>Expense <input id="expenseName" required maxlength="100" placeholder="e.g. Cab to LTT"></label><label>Amount (₹) <input id="expenseCost" type="number" inputmode="decimal" required min="0.01" max="99999999" step="0.01" placeholder="0.00"></label><button>Add expense</button></form>
+<ul id="entries"></ul><div class="filetools"><button id="downloadJournal">Export JSON</button><label class="filebutton">Import JSON<input type="file" accept=".json,application/json" id="readJournal"></label></div><p id="journalStatus" role="status"></p></div></section>
+
 <section id='film' class='rv'><h2>The journey film</h2><p class='sub'>A short animated story of your trip, from Lord Ganesha’s blessing to home. Tap play, pick a chapter, or drag to any moment.</p>
 <div class='stage' id='stage'><div class='lay on' id='lg'></div><div class='lay' id='lm'></div><div class='lay' id='ld'></div><div class='lay' id='lt'></div><div class='lay' id='le'></div><div class='fcap' id='fcap'></div></div>
-<div class='fctl'><button id='fp'>▶ Play</button><button id='fr' title='Restart'>↻</button><input id='fs' type='range' min='0' max='920' value='0' aria-label='Film progress'><span id='ftm'>0:00</span></div>
+<div class='fctl'><button id='fp'>▶ Play</button><button id='fr' title='Restart'>↻</button><input id='fs' type='range' min='0' max='970' value='0' aria-label='Film progress'><span id='ftm'>0:00</span></div>
 <div class='acts' id='acts'></div>
 <p class='sub' style='text-align:center;margin-top:10px'>Map and route are schematic. Intermediate stops marked on the way to Madurai are typical, not verified: confirm on NTES.</p></section>
 
 <section id="route" class="rv"><h2>The journey</h2><p class="sub">Press play, drag the slider or tap a leg. Schematic map, not to scale.</p>
-<div class="card"><svg class="map" id="map" viewBox="0 0 360 520" role="img" aria-label="Schematic route map"><g id="gh"></g><g id="lg"></g><g id="sg"></g><g id="mk"><circle class="pulse" r="9"/><circle r="6" fill="var(--acc)" stroke="#fff" stroke-width="2"/></g></svg>
-<div class="ctrl"><button id="play">▶ Play</button><input id="sl" type="range" min="0" max="1000" value="0" aria-label="Journey progress"></div><div class="cap" id="cap"></div></div></section>
+<div class="card"><svg class="map" id="map" viewBox="0 0 360 520" role="img" aria-label="Schematic route map"><g id="gh"></g><g id="routeLegs"></g><g id="sg"></g><g id="routeMarker"><circle class="pulse" r="9"/><circle r="6" fill="var(--acc)" stroke="#fff" stroke-width="2"/></g></svg>
+<div class="ctrl"><button id="play">▶ Play</button><input id="routeSlider" type="range" min="0" max="1000" value="0" aria-label="Journey progress"></div><div class="cap" id="cap"></div></div></section>
 
 <section id="status"><h2>Where your tickets stand</h2><p class="sub">Read from your IRCTC screenshots on Nov 17.</p><div class="grid" id="board"></div></section>
 
@@ -160,24 +182,24 @@ var $=function(s){return document.querySelector(s)},$$=function(s){return docume
 var RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
 // stars + countdown
 for(var i=0;i<40;i++){var s=document.createElement("i");s.className="st";s.style.cssText="left:"+Math.random()*100+"%;top:"+Math.random()*55+"%;animation-delay:"+Math.random()*3+"s";$("#hero").prepend(s)}
-function cd(){var t=new Date(2026,10,26,20,55)-new Date();if(t<=0){$("#cd").innerHTML="<div><b>🚆</b><small>under way</small></div>";return}
+function cd(){var t=new Date("2026-11-26T20:55:00+05:30")-new Date();if(t<=0){$("#cd").textContent=Date.now()>Date.parse("2026-12-03T18:50:00+05:30")?"Planned journey complete":"Journey under way";return}
 var d=Math.floor(t/864e5),h=Math.floor(t/36e5)%24,m=Math.floor(t/6e4)%60,x=Math.floor(t/1e3)%60;
 $("#cd").innerHTML=[[d,"days"],[h,"hours"],[m,"mins"],[x,"secs"]].map(function(a){return "<div><b>"+a[0]+"</b><small>"+a[1]+"</small></div>"}).join("")}cd();setInterval(cd,1000);
 // map
 var L=[["16339 · Mumbai → Madurai","Thu 26 Nov 20:55 → Sat 28 Nov ~03:35","M70,70 C55,200 90,330 160,420","#0f9488",3],["Madurai → Rameswaram","Sat 28 Nov · 16343 if confirmed, else bus","M160,420 C190,440 220,455 255,470","#d9681a",1.3],["Rameswaram → Tirupati","Sun 29 Nov 16:55 → Mon 30 Nov · Tatkal train or bus","M255,470 C335,400 335,300 262,215","#7c5cd6",2.4],["Tirupati → Pakala","Wed 2 Dec ~17:00 · cab or train","M262,215 C252,226 240,236 228,248","#d9681a",.7],["16340 · Pakala → Mumbai","Wed 2 Dec ~21:25 → Thu 3 Dec ~18:50","M228,248 C150,230 105,150 70,70","#0f9488",3]];
 var S=[["Mumbai",70,70,"start"],["Madurai",160,420,"end"],["Rameswaram",255,470,"end"],["Tirupati",262,215,"start"],["Pakala",228,248,"end"]];
 var W=L.map(function(l){return l[4]}),T=W.reduce(function(a,b){return a+b},0),C=[0];W.forEach(function(w,i){C.push(C[i]+w)});
-var ps=[],ln=[];L.forEach(function(l){var g=document.createElementNS(NS,"path");g.setAttribute("d",l[2]);g.setAttribute("class","ghost");$("#gh").append(g);var p=document.createElementNS(NS,"path");p.setAttribute("d",l[2]);p.setAttribute("class","leg");p.style.stroke=l[3];$("#lg").append(p);ps.push(p);ln.push(p.getTotalLength())});
+var ps=[],ln=[];L.forEach(function(l){var g=document.createElementNS(NS,"path");g.setAttribute("d",l[2]);g.setAttribute("class","ghost");$("#gh").append(g);var p=document.createElementNS(NS,"path");p.setAttribute("d",l[2]);p.setAttribute("class","leg");p.style.stroke=l[3];$("#routeLegs").append(p);ps.push(p);ln.push(p.getTotalLength())});
 var dots=S.map(function(s){var g=document.createElementNS(NS,"g");g.innerHTML='<circle class="dot" cx="'+s[1]+'" cy="'+s[2]+'" r="6"/><text class="lbl" x="'+(s[1]+(s[3]=="start"?-12:12))+'" y="'+(s[2]+4)+'" text-anchor="'+(s[3]=="start"?"end":"start")+'">'+s[0]+'</text>';$("#sg").append(g);return g.firstChild});
 var p=0,raf=0,t0=0;
 function setP(v){p=Math.min(1,Math.max(0,v));var q=p*T,cur=0;L.forEach(function(l,i){var f=Math.min(1,Math.max(0,(q-C[i])/W[i]));ps[i].style.strokeDasharray=f*ln[i]+" "+(ln[i]+2);if(q>C[i]+1e-6)cur=i});
-var f=Math.min(1,Math.max(0,(q-C[cur])/W[cur])),pt=ps[cur].getPointAtLength(f*ln[cur]);$("#mk").setAttribute("transform","translate("+pt.x+","+pt.y+")");
+var f=Math.min(1,Math.max(0,(q-C[cur])/W[cur])),pt=ps[cur].getPointAtLength(f*ln[cur]);$("#routeMarker").setAttribute("transform","translate("+pt.x+","+pt.y+")");
 dots.forEach(function(d,i){d.classList.toggle("on",q>=C[i]-1e-6)});
-$("#cap").innerHTML=p>=1?"<b>Home ✓</b><br>Arrive Mumbai LTT, Thu 3 Dec ~18:50":"<b>"+L[cur][0]+"</b><br>"+L[cur][1];$("#sl").value=Math.round(p*1000)}
+$("#cap").innerHTML=p>=1?"<b>Home ✓</b><br>Arrive Mumbai LTT, Thu 3 Dec ~18:50":"<b>"+L[cur][0]+"</b><br>"+L[cur][1];$("#routeSlider").value=Math.round(p*1000);document.querySelectorAll(".legpick button").forEach((b,i)=>b.setAttribute("aria-pressed",cur===i))}
 function tick(ts){if(!t0)t0=ts-p*14000;setP((ts-t0)/14000);if(p<1)raf=requestAnimationFrame(tick);else stop()}
 function go(){if(p>=1)setP(0);t0=0;$("#play").textContent="❚❚ Pause";raf=requestAnimationFrame(tick)}
 function stop(){cancelAnimationFrame(raf);raf=0;$("#play").textContent="▶ Play"}
-$("#play").onclick=function(){raf?stop():go()};$("#sl").oninput=function(e){stop();setP(e.target.value/1000)};setP(0);var played=false;
+$("#play").onclick=function(){raf?stop():go()};$("#routeSlider").oninput=function(e){stop();setP(e.target.value/1000)};setP(0);var played=false;
 // tickets
 var B=[["ok","Confirmed","16339 · Nov 26","Both PNRs CNF (S1, S2). Departs LTT 20:55."],["wl","Waitlisted","16343 · Nov 28","RLWL 12–18. TNSTC bus is the backup."],["no","Not booked","16780 · Nov 29","Tatkal opens Sat Nov 28, 11:00 AM (Sleeper). Max 4 per PNR. Keep a cancellable bus."],["go","Change to Pakala","16340 · Dec 2","Both PNRs CNF (S3). Change boarding point on Nov 29 morning."]];
 $("#board").innerHTML=B.map(function(b,i){return '<div class="card tk rv '+b[0]+'" style="--d:'+i*.12+'s"><h3>'+b[2]+'</h3><span class="tag">'+b[1]+'</span><p>'+b[3]+'</p></div>'}).join("");
@@ -244,7 +266,7 @@ if(el.id==="route"&&!played){played=true;RM?setP(1):go()}io.unobserve(el)})},{th
 $$(".rv").forEach(function(e){io.observe(e)});
 // ===== Journey film =====
 (function(){
-var FT=97,ft=0,fpl=false,flast=0;
+var filmFrame=0;var FT=97,ft=0,fpl=false,flast=0;
 var PJ=function(lo,la){return [(lo-67.5)*13.4,(37.2-la)*13.4]};
 var pstr=function(a){return 'M'+a.map(function(c){return PJ(c[0],c[1]).join(',')}).join('L')+'Z'};
 var OUT=[[68.2,23.8],[70.5,24.3],[70.1,26.2],[71.5,27.9],[73.5,29.8],[74.6,31],[74.8,32.4],[75.4,34],[74,35],[76,36],[77.8,35.5],[79,34],[78.8,32.6],[80.2,31],[81,30.2],[80.5,28.8],[82,27.9],[84.2,27.4],[87.5,26.5],[88.2,27.2],[88.9,27.6],[89.8,26.8],[92,26.9],[94,27.5],[96,28.3],[97.2,28.2],[96,27],[95.2,26],[94.2,24],[93,22.5],[92.4,24],[91.5,24.2],[90,25.2],[89,26.2],[88.9,22],[87,21.5],[86.5,20.2],[85,19.3],[83,17.5],[81,16],[80.2,15.4],[80.1,13.3],[79.9,11.5],[79.8,10.3],[79.2,9.3],[78.2,8.5],[77.5,8.1],[76.5,8.8],[76,10.5],[75,12.5],[74.6,14],[73.8,16],[73,17.8],[72.8,19.1],[72.7,20.5],[72.6,21.5],[72,21.2],[70.4,20.8],[69,22.3],[70,22.8],[68.8,23]];
@@ -305,8 +327,8 @@ var u=cl((t-70)/6.8);tsun.setAttribute('cy',330-u*170);hl1.setAttribute('transfo
 var cap=null;CP.forEach(function(x){if(x[0]<=t)cap=x});fc.classList.toggle('on',!!cap&&t>=13&&t<90);if(cap)fc.innerHTML='<b>'+cap[1]+'</b><span>'+cap[2]+'</span>';
 var ai=0;ACTS.forEach(function(a,i){if(t>=a[1])ai=i});$$('#acts button').forEach(function(b,i){b.classList.toggle('on',i===ai)});
 $('#fs').value=Math.round(t*10);$('#ftm').textContent=Math.floor(t/60)+':'+('0'+Math.floor(t%60)).slice(-2)}
-function ftick(ts){if(!fpl)return;if(!flast)flast=ts;var dt=Math.min(.1,(ts-flast)/1e3);flast=ts;ft+=dt;if(ft>=FT){ft=FT;fplay(false)}render(ft);if(fpl)requestAnimationFrame(ftick)}
-function fplay(v){fpl=v;$('#fp').textContent=v?'❚❚ Pause':'▶ Play';if(v){flast=0;if(ft>=FT)ft=0;requestAnimationFrame(ftick)}}
+function ftick(ts){if(!fpl)return;if(!flast)flast=ts;var dt=Math.min(.1,(ts-flast)/1e3);flast=ts;ft+=dt;if(ft>=FT){ft=FT;fplay(false)}render(ft);if(fpl)filmFrame=requestAnimationFrame(ftick)}
+function fplay(v){cancelAnimationFrame(filmFrame);fpl=v;$('#fp').textContent=v?'❚❚ Pause':'▶ Play';if(v){flast=0;if(ft>=FT)ft=0;filmFrame=requestAnimationFrame(ftick)}}
 $('#fp').onclick=function(){fplay(!fpl)};$('#fr').onclick=function(){ft=0;render(0);fplay(true)};
 $('#fs').oninput=function(e){fplay(false);ft=e.target.value/10;render(ft)};
 $('#acts').onclick=function(e){var b=e.target.closest('button');if(!b)return;ft=ACTS[+b.dataset.i][1];render(ft);fplay(true)};
@@ -319,4 +341,101 @@ function sc(){var h=document.documentElement,y=h.scrollTop;$("#sp").style.width=
 var tl=$("#tl"),r=tl.getBoundingClientRect(),f=Math.min(r.height,Math.max(0,innerHeight*.6-r.top));$("#fill").style.height=f+"px";
 var cur="";secs.forEach(function(s){if(s.getBoundingClientRect().top<innerHeight*.4)cur=s.id});if(/^n[0-9][0-9]$/.test(cur)||cur==="details")cur="details";links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+cur)})}
 addEventListener("scroll",sc,{passive:true});sc();
+
+const rail=document.querySelector('#dateRail');
+function chooseDay(i){
+  const [date,title,items]=D[i];
+  $('#dayNo').textContent='Day '+(i+1)+' / 8';
+  $('#when').textContent=date;
+  $('#where').textContent=title;
+  $('#brief').replaceChildren(...items.slice(0,3).map(([time,activity])=>{
+    const row=document.createElement('li'),label=document.createElement('b');
+    label.textContent=time;row.append(label,activity);return row;
+  }));
+  $('#fullDay').href='#'+IDS[i];
+  Array.from(rail.children).forEach((btn,index)=>btn.setAttribute('aria-pressed',index===i));
+  if(!RM) $('.ticketbody').animate([{opacity:.35,transform:'translateX(7px)'},{opacity:1,transform:'none'}],{duration:240});
+}
+D.forEach(([date],i)=>{const btn=document.createElement('button');btn.textContent=date.split(' ')[1];btn.setAttribute('aria-label',date);btn.onclick=()=>chooseDay(i);rail.append(btn)});
+chooseDay(Math.max(0,Math.min(7,Math.floor((Date.now()-Date.parse('2026-11-26T00:00:00+05:30'))/86400000))));
+const picks=document.createElement('div');picks.className='legpick';
+$('#cap').after(picks);
+L.forEach((leg,i)=>{const btn=document.createElement('button');btn.textContent='To '+S[(i+1)%S.length][0];btn.onclick=()=>{played=true;stop();setP((C[i]+.01)/T)};picks.append(btn)});
+setP(p);
+const mix=document.createElement('div');mix.className='card mix';
+mix.innerHTML='<h3>Build your group budget</h3><p class="sub">Choose an estimate for each expense. Total for seven adults, excluding food and booked tickets.</p>';
+R.forEach(([name,a,b])=>{const label=document.createElement('label'),select=document.createElement('select');label.append(name);
+  [a,b].forEach((value,i)=>select.add(new Option((i?'Very cheap':'Cheap')+' · '+inr(value),value)));
+  label.append(select);mix.append(label);
+});
+const total=document.createElement('output');total.setAttribute('aria-live','polite');mix.append(total);$('#money').append(mix);
+function updateEstimate(){total.value='Estimated total · '+inr(Array.from(mix.querySelectorAll('select')).reduce((sum,el)=>sum+Number(el.value),0))}
+mix.onchange=updateEstimate;updateEstimate();
+(()=>{
+const scenes=[
+ ['Mumbai platform','suitcase','🧳','🌻','🦋','#f8b68f','#9185a5','#72956f'],
+ ['Deccan countryside','sunflower','🌻','🪁','🐄','#86cee8','#87ac85','#9fbf72'],
+ ['Dhanushkodi shore','seashell','🐚','🐠','⛵','#79cddb','#5ea8ae','#71c8ce'],
+ ['Rameswaram coast','fishing boat','⛵','🥥','🦀','#f9bc91','#839f98','#69bcbd'],
+ ['Tirupati foothills','butterfly','🦋','🌳','🌼','#c1d8f4','#668c88','#88ab78'],
+ ['Tirumala hills','peacock','🦚','🌸','🍃','#94c6d9','#527f70','#83aa78'],
+ ['Pakala at dusk','lantern','🏮','🌙','⭐','#a594ce','#7b7998','#777d80'],
+ ['Mumbai homecoming','house','🏡','🚌','🪁','#ffc796','#8c9c99','#95ad80']
+];
+const key='rameswaram-journey-journal-v1';
+const dates=Array.from({length:8},(_,i)=>new Date(Date.UTC(2026,10,26+i)).toISOString().slice(0,10));
+const blank=()=>({version:1,currency:'INR',days:dates.map(date=>({date,complete:false,stamp:false,expenses:[]}))});
+function validate(raw){
+ if(raw?.version!==1||raw.currency!=='INR'||!Array.isArray(raw.days)||raw.days.length!==8)throw Error();
+ const result=blank();
+ result.days.forEach((day,i)=>{
+  const src=raw.days[i];
+  if(src?.date!==day.date||typeof src.complete!=='boolean'||typeof src.stamp!=='boolean'||!Array.isArray(src.expenses))throw Error();
+  day.complete=src.complete;day.stamp=src.stamp;
+  day.expenses=src.expenses.map(e=>{
+   if(typeof e?.name!=='string'||!e.name.trim()||e.name.length>100||!Number.isSafeInteger(e.paise)||e.paise<1||e.paise>9999999900)throw Error();
+   return {name:e.name.trim(),paise:e.paise};
+  });
+ });
+ return result;
+}
+let book=blank(),message='Changes save in this browser. Export JSON for a backup.';
+try{const saved=localStorage.getItem(key);if(saved)book=validate(JSON.parse(saved))}catch{message='Could not read a saved journal. Export this session to keep a backup.'}
+function save(){try{localStorage.setItem(key,JSON.stringify(book));message='Saved in this browser.'}catch{message='Browser saving is unavailable. Export JSON to keep these changes.'}$('#journalStatus').textContent=message}
+const jday=$('#journalDay'),tday=$('#toyDay'),scene=$('#windowScene'),hunt=$('#hunt'),ride=$('#ride');
+dates.forEach((date,i)=>{jday.add(new Option(D[i][0],i));tday.add(new Option(scenes[i][0],i))});
+const pending=book.days.findIndex(x=>!x.complete);jday.selectedIndex=Math.max(0,pending);
+const firstStamp=book.days.findIndex(x=>!x.stamp);tday.selectedIndex=Math.max(0,firstStamp);
+function paintToy(){
+ const i=tday.selectedIndex,[place,word,icon,a,b,sky,hill,land]=scenes[i],owned=book.days[i].stamp;
+ scene.classList.remove('rolling');scene.style.setProperty('--sky',sky);scene.style.setProperty('--hill',hill);scene.style.setProperty('--land',land);
+ $('#toyCount').textContent=book.days.filter(d=>d.stamp).length+' / 8 stamps';
+ hunt.textContent=owned?'Stamped! You spotted the '+word+'.':'Can you spot the '+word+'?';
+ const tray=$('#spotObjects');tray.replaceChildren();
+ const labels=new Map(scenes.map(x=>[x[2],x[1]]));Object.entries({'🪁':'kite','🐄':'cow','🐠':'fish','🥥':'coconut','🦀':'crab','🌳':'tree','🌼':'flower','🌸':'blossom','🍃':'leaves','🌙':'moon','⭐':'star','🚌':'bus'}).forEach(([k,v])=>labels.set(k,v));
+ [icon,a,b].forEach((emoji,k)=>{const slot=(k+i)%3,btn=document.createElement('button');btn.textContent=emoji;btn.setAttribute('aria-label',labels.get(emoji)||emoji);btn.style.left=[22,50,79][slot]+'%';btn.style.top=[42,65,38][slot]+'%';btn.onclick=()=>{
+  if(k!==0){hunt.textContent='That’s the '+labels.get(emoji)+'. Look for the '+word+'!';return}
+  if(!book.days[i].stamp){book.days[i].stamp=true;save()}paintToy();hunt.textContent='You found the '+word+'! Your stamp is in the pass.';if(!RM)$('#album').children[i].animate([{transform:'scale(1.45) rotate(-8deg)'},{transform:'none'}],{duration:500});
+ };tray.append(btn)});
+ ride.textContent=owned&&i<7?'Ride to the next stop →':'Roll the train ▸';
+ const album=$('#album');album.replaceChildren();book.days.forEach((d,n)=>{const el=document.createElement('span');el.className='souvenir'+(d.stamp?' collected':'');el.textContent=d.stamp?scenes[n][2]:'·';el.setAttribute('aria-label',scenes[n][0]+(d.stamp?' collected':' pending'));el.title=el.getAttribute('aria-label');album.append(el)});
+}
+tday.onchange=paintToy;
+ride.onclick=()=>{const i=tday.selectedIndex;if(book.days[i].stamp&&i<7){tday.selectedIndex++;paintToy();scene.classList.add('rolling')}else scene.classList.toggle('rolling');ride.textContent=book.days[tday.selectedIndex].stamp&&tday.selectedIndex<7?'Ride to the next stop →':scene.classList.contains('rolling')?'Stop the train ▪':'Roll the train ▸'};
+const money=n=>new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',minimumFractionDigits:n%100?2:0}).format(n/100);
+const spend=d=>d.expenses.reduce((sum,e)=>sum+e.paise,0);
+function paintJournal(){
+ const d=book.days[jday.selectedIndex];$('#finishedDay').checked=d.complete;$('#daySpend').textContent=money(spend(d));$('#tripSpend').textContent=money(book.days.reduce((sum,d)=>sum+spend(d),0));$('#doneCount').textContent=book.days.filter(d=>d.complete).length+' / 8';
+ const list=$('#entries');list.replaceChildren();
+ if(!d.expenses.length)list.textContent='No expenses recorded for this day.';
+ d.expenses.forEach((e,i)=>{const li=document.createElement('li'),name=document.createElement('span'),amt=document.createElement('b'),remove=document.createElement('button');name.textContent=e.name;amt.textContent=money(e.paise);remove.textContent='Remove';remove.setAttribute('aria-label','Remove '+e.name);remove.onclick=()=>{d.expenses.splice(i,1);save();paintJournal()};li.append(name,amt,remove);list.append(li)});
+ $('#journalStatus').textContent=message;
+}
+jday.onchange=()=>{$('#expenseForm').reset();paintJournal()};
+$('#finishedDay').onchange=e=>{book.days[jday.selectedIndex].complete=e.target.checked;save();paintJournal()};
+$('#expenseForm').onsubmit=e=>{e.preventDefault();const field=$('#expenseName'),name=field.value.trim(),paise=Math.round($('#expenseCost').valueAsNumber*100);if(!name){field.focus();return}if(!Number.isSafeInteger(paise)||paise<1||paise>9999999900)return;book.days[jday.selectedIndex].expenses.push({name,paise});save();e.target.reset();paintJournal()};
+$('#downloadJournal').onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(book,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='journey-journal.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+$('#readJournal').onchange=async e=>{const input=e.target,file=input.files[0];if(!file)return;try{const next=validate(JSON.parse(await file.text()));if(book.days.some(d=>d.complete||d.stamp||d.expenses.length)&&!confirm('Replace your current journal and souvenir stamps with this backup?'))return;book=next;save();paintToy();paintJournal()}catch{$('#journalStatus').textContent='Import failed. Choose a JSON backup exported from this journey.'}finally{input.value=''}};
+paintToy();paintJournal();
+})();
 </script></body></html>
