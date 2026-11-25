@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "scheduleRevision": 2,
+  "currency": "INR",
+  "expenseTypes": [
+    "Transport",
+    "Food & drinks",
+    "Accommodation",
+    "Temple visits",
+    "Shopping",
+    "Baby supplies"
+  ],
+  "packing": [],
+  "budgetChoices": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "connections": {},
+  "preferences": {},
+  "destinationNotes": {},
+  "days": [
+    {
+      "date": "2026-11-26",
+      "complete": false,
+      "stamp": false,
+      "expenses": []
+    },
+    {
+      "date": "2026-11-27",
+      "complete": false,
+      "stamp": false,
+      "expenses": []
+    },
+    {
+      "date": "2026-11-28",
+      "complete": false,
+      "stamp": false,
+      "expenses": []
+    },
+    {
+      "date": "2026-11-29",
+      "complete": false,
+      "stamp": false,
+      "expenses": []
+    },
+    {
+      "date": "2026-11-30",
+      "complete": false,
+      "stamp": false,
+      "expenses": []
+    },
+    {
+      "date": "2026-12-01",
+      "complete": false,
+      "stamp": false,
+      "expenses": []
+    },
+    {
+      "date": "2026-12-02",
+      "complete": false,
+      "stamp": false,
+      "expenses": []
+    },
+    {
+      "date": "2026-12-03",
+      "complete": false,
+      "stamp": false,
+      "expenses": []
+    }
+  ]
+}
